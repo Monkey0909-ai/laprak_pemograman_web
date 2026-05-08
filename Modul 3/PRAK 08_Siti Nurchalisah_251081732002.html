@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Pendaftaran Kursus</title>
+</head>
+<body>
+    <table border="1" align="center" width="500" cellpadding="0" cellspacing="0">
+        <tr bgcolor="skyblue">
+            <td colspan="2" align="center">
+                <h1 style="color: red;">Pendaftaran Kursus</h1>
+            </td>
+        </tr>
+
+        <tr bgcolor="gray">
+            <td colspan="2">
+                <h3>Data Diri</h3>
+                <form>
+                    <table width="100%" cellpadding="5">
+                        <tr>
+                            <td>Nama</td>
+                            <td><input type="text" name="nama" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Nim</td>
+                            <td><input type="text" name="nim" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input type="text" name="email" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td><input type="date" name="tgl_lahir"></td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>
+                                <input type="radio" name="jk" value="L"> Laki-laki <br>
+                                <input type="radio" name="jk" value="P"> Perempuan
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pilih Program Kursus</td>
+                            <td>
+                                <input type="checkbox" name="prog1"> C# <br>
+                                <input type="checkbox" name="prog2"> Java <br>
+                                <input type="checkbox" name="prog3"> SQL <br>
+                                <input type="checkbox" name="prog4"> HTML dan PHP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pilihan Hari/Jam Kursus</td>
+                            <td>
+                                <select name="jadwal">
+                                    <option>Senin - Rabu/09.00 - 11.00</option>
+                                    <option>Selasa - Kamis/13.00 - 15.00</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+            </td>
+        </tr>
+
+        <tr bgcolor="salmon">
+            <td colspan="2" padding="10">
+                <p style="color: red; font-weight: bold; margin-left: 10px;">Komentar Anda</p>
+                <center>
+                    <textarea name="komentar" cols="60" rows="5"></textarea>
+                    <br><br>
+                    <div align="left" style="margin-left: 10px; padding-bottom: 10px;">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                        <input type="button" value="Cancel">
+                    </div>
+                </center>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
